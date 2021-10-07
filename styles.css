@@ -1,0 +1,15 @@
+.minuteHead {
+    color: rgb(0,71,171); /*Makes the headings of each meeting minutes have cobalt text*/
+}
+
+body {
+    background-color: beige; /*Gives the entire page a beige background*/
+}
+
+nav {
+    background-color: rgb(173, 216, 230) ; /*Gives the nav bar a light blue background*/
+}
+
+section {
+    background-color: hsl(195, 53%, 79%); /*Gives each section a light blue background*/
+}
