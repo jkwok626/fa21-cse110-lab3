@@ -23,45 +23,51 @@
 
                 <h3>9/21/21</h3>
 
-                <details>
-                    <summary><b>Attendants</b></summary>
-                    <ul>
-                        <li>Bob</li>
-                        <li>Bill</li>
-                        <li>Jackie</li>
-                    </ul>
-                </details>
+                <div class="gridCont">
+                    <details>
+                        <summary><b>Attendants</b></summary>
+                        <ul>
+                            <li>Bob</li>
+                            <li>Bill</li>
+                            <li>Jackie</li>
+                        </ul>
+                    </details>
+    
+                    <details>
+                        <summary><b>Agenda</b></summary>
+                        <p>We discussed ideas for the look and feel of our new app.</p>
+                    </details>
+                    
+                    <details>
+                        <summary><i><b>New Business</b></i></summary>
+                        <p>We decided on a <strong>simple interface</strong> with the notes being formatted in a <em>grid format</em>.</p>
+                    </details>
+                    
+                    <details>
+                        <summary><b>Comments & Questions</b></summary>
+                        <ol>
+                            <li>Who will be creating and working on the Figma file?</li>
+                            <li>What color scheme do we want?</li>
+                        </ol>
+                    </details>
+                </div>
+                
+                <h3>Pictures and Recordings</h3>
+                <div class="flexCont">
+                    <img src="samplePic.png" alt="Simple sketch from meeting">
 
-                <details>
-                    <summary><b>Agenda</b></summary>
-                    <p>We discussed ideas for the look and feel of our new app.</p>
-                </details>
-                
-                <details>
-                    <summary><i><b>New Business</b></i></summary>
-                    <p>We decided on a <strong>simple interface</strong> with the notes being formatted in a <em>grid format</em>.</p>
-                </details>
-                
-                <details>
-                    <summary><b>Comments & Questions</b></summary>
-                    <ol>
-                        <li>Who will be creating and working on the Figma file?</li>
-                        <li>What color scheme do we want?</li>
-                    </ol>
-                </details>
-                
-                <h3>Pictures</h3>
-                <img src="samplePic.png" alt="Simple sketch from meeting">
+                    <video controls>
+                        <source src="sampleVideo.mp4">
+                        Video from meeting
+                    </video>
+                </div>
 
-                <h3>Audio and Video Recordings</h3>
+                <br>
+
                 <audio controls>
                     <source src="sampleAudio.mp3">
                     Audio from the meeting
                 </audio><br>
-                <video controls>
-                    <source src="sampleVideo.mp4">
-                    Video from meeting
-                </video>
             </section>
 
             <section>
@@ -72,50 +78,50 @@
 
                 <h3>9/28/21</h3>
 
-                <details>
-                    <summary><b>Attendants</b></summary>
-                    <ul>
-                        <li>Bill</li>
-                        <li>Jackie</li>
-                    </ul>
-                </details>
-
-                <details>
-                    <summary><b>Agenda</b></summary>
-                    <p>We started discussing what kind of tech we would be using to make our new app.</p>
-                </details>
-
-                <details>
-                    <summary><b>Unfinished Business from Previous Meeting</b></summary>
-                    <p>Bill made the Figma file and worked on the design</p>
-                    <p>We decided on a brown and yellow color scheme.</p>
-                </details>
+                <div class="gridCont">
+                    <details>
+                        <summary><b>Attendants</b></summary>
+                        <ul>
+                            <li>Bill</li>
+                            <li>Jackie</li>
+                        </ul>
+                    </details>
+    
+                    <details>
+                        <summary><b>Agenda</b></summary>
+                        <p>We started discussing what kind of tech we would be using to make our new app.</p>
+                    </details>
+                    
+                    <details>
+                        <summary><i><b>New Business</b></i></summary>
+                        <p>We're planning on making this a web app so we're just using HTML, CSS, and JavaScript.</p>
+                        <p>Bob started a new Github repo. </p>
+                    </details>
+                    
+                    <details>
+                        <summary><b>Comments & Questions</b></summary>
+                        <ol>
+                            <li>Everything looks good! Can't wait to start working!</li>
+                        </ol>
+                    </details>
+                </div>
                 
-                <details>
-                    <summary><i><b>New Business</b></i></summary>
-                    <p>We're planning on making this a web app so we're just using HTML, CSS, and JavaScript.</p>
-                    <p>Bob started a new Github repo. </p>
-                </details>
-                
-                <details>
-                    <summary><b>Comments & Questions</b></summary>
-                    <ol>
-                        <li>Everything looks good! Can't wait to start working!</li>
-                    </ol>
-                </details>
-                
-                <h3>Pictures</h3>
-                <img src="samplePic.png" alt="Simple sketch from meeting">
+                <h3>Pictures and Recordings</h3>
+                <div class="flexCont">
+                    <img src="samplePic.png" alt="Simple sketch from meeting">
 
-                <h3>Audio and Video Recordings</h3>
+                    <video controls>
+                        <source src="sampleVideo.mp4">
+                        Video from meeting
+                    </video>
+                </div>
+
+                <br>
+
                 <audio controls>
                     <source src="sampleAudio.mp3">
                     Audio from the meeting
                 </audio><br>
-                <video controls>
-                    <source src="sampleVideo.mp4">
-                    Video from meeting
-                </video>
             </section>
 
             <section>
@@ -165,9 +171,10 @@
                         <input type="checkbox" id="thursday" value="Thursday">
                         <label for="thursday">Thursday</label><br>
                         <input type="checkbox" id="friday" value="Friday">
-                        <label for="friday">Friday</label><br><br>
+                        <label for="friday">Friday</label>
 
                         <button>Submit</button>
+                        <p>Don't show this message</p>
                     </fieldset>
                 </form>
             </section>
