@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
+
 .minuteHead {
     color: rgb(0,71,171); /*Makes the headings of each meeting minutes have cobalt text*/
 }
@@ -5,7 +7,9 @@
 body {
     background-color: beige; /*Gives the entire page a beige background*/
     margin: auto; /*Horizontally centers the body on the screen*/
-    max-width: 75vw; /*Make the body 75% of the width of the viewport*/
+    width: 75vw; /*Make the body 75% of the width of the viewport*/
+    max-width: 1500px; /*Make the body not grow past 1500px*/
+    font-family: 'Noto Sans Display', 'Times New Roman';
 }
 
 nav {
@@ -15,6 +19,19 @@ nav {
     border-right:  0.15pc solid rgb(0,71,171); /*Gives the nav bar a solid, cobalt right border with a width of 0.15pc*/
     border-bottom-left-radius: 10px; /*Gives the bottom left corner of the border a radius of 10px*/
     border-bottom-right-radius: 10px; /*Gives the bottom right corner of the border a radius of 10px*/
+    font-family: 'Noto Sans Display', 'Times New Roman';
+}
+
+a[href="index.html"] {
+    margin-left: 20px;
+}
+
+a[href="index.html"]:hover {
+    color: white;
+}
+
+a[href="index.html"]:active {
+    color: black;
 }
 
 section {
@@ -29,6 +46,7 @@ section {
     border-color: rgb(0,71,171);
     border-width: 10%;
     border-radius: 10px; /*Gives the border a radius of 10px*/
+    margin-bottom: 20px;
 }
 
 section>details {
@@ -36,8 +54,15 @@ section>details {
     padding: 0px 0px 10px 10px;
 }
 
-h1 {
-    margin: 10px 15px 10px 15px; /*Give h1 a top and bottom margin of 10px, and a left and right padding of 15px*/
+section img, section video {
+    width: 45%; /*Make the width of the image and video 45% of the section*/
+    min-width: 200px; /*Give them a minimum width of 200px*/
+}
+
+#pageTitle {
+    margin: 10px 15px 10px 15px; /*Give the page title a top and bottom margin of 10px, and a left and right padding of 15px*/
+    text-align: center; /*Centers the title of the page*/
+    text-decoration: underline; /*Underlines the title of the page*/
 }
 
 footer {
@@ -47,4 +72,5 @@ footer {
     margin-right: 15px;
     margin-bottom: 20px;
     height: 5vh; /*Make the footer take up 5% of the height of viewport*/ 
+    font-family: 'Noto Sans Display', 'Times New Roman';
 }
