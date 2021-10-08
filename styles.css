@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
 
+* {
+    font-family: 'Noto Sans Display', 'Times New Roman';
+}
+
 .minuteHead {
     color: rgb(0,71,171); /*Makes the headings of each meeting minutes have cobalt text*/
 }
@@ -9,7 +13,6 @@ body {
     margin: auto; /*Horizontally centers the body on the screen*/
     width: 75vw; /*Make the body 75% of the width of the viewport*/
     max-width: 1500px; /*Make the body not grow past 1500px*/
-    font-family: 'Noto Sans Display', 'Times New Roman';
 }
 
 nav {
@@ -19,19 +22,19 @@ nav {
     border-right:  0.15pc solid rgb(0,71,171); /*Gives the nav bar a solid, cobalt right border with a width of 0.15pc*/
     border-bottom-left-radius: 10px; /*Gives the bottom left corner of the border a radius of 10px*/
     border-bottom-right-radius: 10px; /*Gives the bottom right corner of the border a radius of 10px*/
-    font-family: 'Noto Sans Display', 'Times New Roman';
+    position: static;
 }
 
 a[href="index.html"] {
-    margin-left: 20px;
+    margin-left: 20px; /*For links that link to index, give them a left a margin of 20px*/
 }
 
 a[href="index.html"]:hover {
-    color: white;
+    color: white; /*When you hover over links to index, they should turn white*/
 }
 
 a[href="index.html"]:active {
-    color: black;
+    color: black; /*When you click on links to index, they should turn black*/
 }
 
 section {
@@ -49,7 +52,7 @@ section {
     margin-bottom: 20px;
 }
 
-section>details {
+section > details {
     /*For the details tags in sections, give the details bottom and left padding of 10px*/
     padding: 0px 0px 10px 10px;
 }
@@ -72,5 +75,43 @@ footer {
     margin-right: 15px;
     margin-bottom: 20px;
     height: 5vh; /*Make the footer take up 5% of the height of viewport*/ 
-    font-family: 'Noto Sans Display', 'Times New Roman';
+    position: relative;
+}
+
+button {
+    display: block; /*Buttons get put on their own line and take up the full width of their parent element*/
+}
+
+button + p {
+    display: none; /*Don't display p elements that appear immediately after a button*/
+}
+
+h3 ~ .flexCont {
+    /*Flexbox for image and video*/
+    display: flex;
+    flex-wrap: wrap; /*Wrap items around when the width shrinks*/
+    justify-content: space-around; /*Space content in flexbox around evenly*/
+    align-items: flex-start; /*Align items to the top of the flexbox*/
+}
+
+fieldset label {
+    font-weight: bold; /*Bold the labels that are descendants of fieldset*/
+}
+
+div.gridCont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*Creates 4 equal grid columns*/
+    justify-items: start; /*Items are left aligned inside their own cell*/
+    justify-content: space-around; /*Space content in grid around evenly*/
+}
+
+@media only screen and (max-width: 1000px) {
+    div.gridCont {
+        display: grid;
+        grid-template-columns: 100%; /*Make each grid column 100% so that the grid wraps*/
+    }
+
+    body {
+        width: 90%; /*Make the width of the body 90% when the screen shrinks to a certain point*/
+    }
 }
